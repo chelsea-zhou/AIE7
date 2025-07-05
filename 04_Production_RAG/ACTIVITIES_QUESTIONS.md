@@ -21,11 +21,16 @@ Consider how you would modify the graph to handle these scenarios.
 #### ❓Question #1:
 
 What conclusions can you draw about the above results?
-
 Describe in your own words what the metrics are expressing.
 
 ##### ✅ Answer #1:
+Based on the evaluation results from the 3 evaluators:
+- cot contextual accuracy: 100% correct
+- dopeness: 25% dope
+- score string: 8.25 accurate 
 
+our RAG system is 100% correct, and relatively accurate, but not very dope. 
+However even the 25% dopeness is false positive due to hallucination. By examing the trace, the evaluator will give 'Y' for dopeness even if its reasoning says the opposite. 
 
 #### 🏗️ Activity #1:
 
@@ -33,8 +38,17 @@ Include a screenshot of your trace and explain what it means.
 
 ![LangSmith Trace](trace.png)
 
-
-
+- This shows the trace of evaluting one exmaple in the dataset, using labeled_score_string evaluator.
+- It shows this evaluation takes 4.23s, and latency is mostly due to calling gpt-4 API for evaluation.
+- it shows the input and output of this evaluation_chain
+    - input has : user question, prediction(rag results, actual), and reference(expected answer)
+    - output has: evaluation results : reasoning and a score 
+- it shows the GPT evaluation input and output
+    - input has : 
+        - system message
+        - human message: instruction, ground truth, question and assistant answer
+    - output is the AI evaluator response
+- it shows metadata about this run: reference example id, project_id and so on 
 
 #### 🏗️ Activity #2:
 
