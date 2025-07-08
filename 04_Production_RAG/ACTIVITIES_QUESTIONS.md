@@ -40,7 +40,7 @@ However even the 25% dopeness is false positive due to hallucination. By examing
 #### 🏗️ Activity #1:
 
 Include a screenshot of your trace and explain what it means.
-![LangGraph trace](LangGraph_trace.png)
+![LangGraph trace](langGraph_trace.png)
 - this shows the trace of invoking our langGraph rag with a user question. It shows our two nodes "retrieve" and "generate" and the inputs and output of each step.
 
 ![LangSmith Trace](trace.png)
