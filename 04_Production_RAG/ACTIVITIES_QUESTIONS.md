@@ -16,6 +16,11 @@ Consider how you would modify the graph to handle these scenarios.
 
 - If the response needs fact-checking: we can add another node(fact-checking node) after generate, that will call LLM model to validate if the response is consistent with context provided, or use some external data source for validation, and output true or false. 
 
+##### 🏗️  Activity #1: Brainstorm some ideas that would split large single documents into smaller documents.
+1. document structure aware chunking : This method leverages the inherent structure of the document format (e.g., Markdown headers, HTML tags, code blocks, tables in CSV/Excel, etc.) to guide how chunks are split.
+2. semantic chunking: Uses meaning and topic shifts in the content to decide where to split. It typically works by generating embeddings of sentences or paragraphs and measuring similarity between them.
+3. Hierarchical Chunking: Organizes the document into a tree structure — e.g., chapters → sections → paragraphs — and allows chunking at different levels based on use case or granularity needs.
+
 
 ### LangSmith questions
 #### ❓Question #1:
@@ -35,6 +40,8 @@ However even the 25% dopeness is false positive due to hallucination. By examing
 #### 🏗️ Activity #1:
 
 Include a screenshot of your trace and explain what it means.
+![LangGraph trace](LangGraph_trace.png)
+- this shows the trace of invoking our langGraph rag with a user question. It shows our two nodes "retrieve" and "generate" and the inputs and output of each step.
 
 ![LangSmith Trace](trace.png)
 
