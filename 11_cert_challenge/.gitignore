@@ -1,0 +1,148 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+conda-meta/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environment variables and API keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.key
+api_keys.txt
+secrets.txt
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Next.js
+.next/
+out/
+build/
+
+# React/Frontend
+/coverage
+*.tsbuildinfo
+next-env.d.ts
+
+# Package managers lock files (optional - some teams like to commit these)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Documentation builds
+docs/_build/
+
+# PyCharm
+.idea/
+
+# Vercel
+.vercel/
+
+# AI/ML model files
+*.model
+*.weights
+*.h5
+*.pb
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+
+# LangSmith/LangChain specific
+langsmith_cache/
+.langchain/
+
+# AI artifacts
+embeddings/
+vector_store/
+chroma_db/
+faiss_index/
+
+# System Design Agent App specific ignores
+system_design_agent_app/.DS_Store
+system_design_agent_app/api/.DS_Store
+system_design_agent_app/api/__pycache__/
+system_design_agent_app/api/.venv/
+system_design_agent_app/api/beyond_chatgpt.egg-info/
+system_design_agent_app/frontend/node_modules/
+system_design_agent_app/frontend/.next/
+system_design_agent_app/frontend/out/
+system_design_agent_app/frontend/build/
+system_design_agent_app/.vercel/
+system_design_agent_app/.cursor/ 
