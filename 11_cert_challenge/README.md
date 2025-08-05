@@ -19,4 +19,6 @@ An AI-powered educational assistant that helps software engineers master system 
 - **Advanced Retrieval**: Cohere reranking for improved context precision (72% → 87%)
 - **Real-time Learning**: Interactive chat interface with streaming responses
 
-Built with LangGraph, OpenAI GPT-4, Qdrant, and React.
+## Demo Video
+
+🎥 **[Watch the Live Demo](https://www.loom.com/share/a9c665d57a9e49888915e9e8d8e02c02)** - See the AI System Design Tutor in action with real-time chat interactions and intelligent routing.
